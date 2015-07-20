@@ -228,9 +228,21 @@ hr {
 /* FOOTER SECTION */
 
 #f {
+	background:image-url("cutnedgebackground1.jpg") no-repeat center top;
 	padding-bottom: 50px;
 	padding-top: 50px;
-	background: #ef8452;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	 -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #f input {

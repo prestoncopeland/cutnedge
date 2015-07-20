@@ -23,7 +23,7 @@
       <h2 class="theme mb">Spotlight On Our Shop</h2>
 
       <div class="col-md-4">
-        <p><i class="ion-battery-charging theme x2"></i></p>
+        <%= image_tag('lamontcutnedge.jpg', :size=>'200x250') %>
         <h4>Everyone's Welcome</h4>
         <p class="ts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div><!--/col-md-4 -->
@@ -35,19 +35,14 @@
       </div><!--/col-md-4 -->
 
       <div class="col-md-4">
-        <p><i class="ion-help-buoy theme x2"></i></p>
+        <%= image_tag('milqcutnedge.jpg', :size=>'200x250') %>
         <h4>Hablamos Español</h4>
         <p class="ts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div><!--/col-md-4 -->
     </div><!--/row -->
-
-    <div class="row mtb">
-      <div class="col-lg-10 col-lg-offset-1">
-        <img src="assets/img/panoramic.jpg" class="img-responsive aligncenter" alt="">
-        <p class="mtb centered"><h3><strong>Hours of Operation: | 410 Massachusetts Avenue, Boston, MA 02115 | (617) 867-9200 </strong></h3></p>
-      </div>
-    </div><!--/row -->
   </div><!--/container -->
+
+  <%= render partial: 'layouts/user_carousel' %>
 
 <script>
   // Hair Clippers
