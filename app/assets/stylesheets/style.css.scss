@@ -11,6 +11,8 @@
 	1. GENERAL STRUCTURES
 ################################################################# */
 
+$barber-red: #B31026;
+
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
@@ -118,7 +120,7 @@ hr {
 /* Helpers */
 
 .theme {
-	color: #B31026;
+	color: $barber-red;
 }
 
 .x2 {
