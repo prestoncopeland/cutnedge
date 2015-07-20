@@ -2,9 +2,7 @@
       <div class="container">
         <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h1><b>Cut N Edge: Where Looking Good Is Understood</b></h1>
-          <hr class="aligncenter">
-          <%= image_tag('cutnedgelogo.png', :class=>"img-responsive aligncenter", :size=> "1280 × 853") %>
+          <%= image_tag('cutnedgebiglogo.png', :size=>'600x250') %>
         </div>
         </div>
     </div><!-- /.container -->
@@ -13,8 +11,8 @@
   <div class="container">
     <div class="row mtb">
       <div class="col-lg-8 col-lg-offset-2 centered">
-        <p>There are many variations of passages of <b>Lorem Ipsum</b> available, but the majority have <b>suffered alteration</b> in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-        <p class="mt"><button class="btn btn-lg btn-transparent">Learn More</button></p>
+        <h2 class="theme mb">Where Looking Good Is Understood</h2>
+        <p class="mt">For several years, Cut N Edge has been providing Boston with outstanding haircuts. Come for the atmosphere. Come for the music. Come get it cut -- and edged.</p>
       </div>
     </div><!--/row -->
     <hr>
@@ -22,23 +20,23 @@
 
   <div class="container">
     <div class="row mtb centered">
-      <h2 class="theme mb">Some Awesome Features</h2>
+      <h2 class="theme mb">Spotlight On Our Shop</h2>
 
       <div class="col-md-4">
         <p><i class="ion-battery-charging theme x2"></i></p>
-        <h4>Fast Charging</h4>
+        <h4>Everyone's Welcome</h4>
         <p class="ts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div><!--/col-md-4 -->
 
       <div class="col-md-4">
         <p><i class="icon-beaker theme x2"></i></p>
-        <h4>Well Crafted</h4>
+        <h4>Superior Service</h4>
         <p class="ts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div><!--/col-md-4 -->
 
       <div class="col-md-4">
         <p><i class="ion-help-buoy theme x2"></i></p>
-        <h4>Free Support</h4>
+        <h4>Hablamos Español</h4>
         <p class="ts">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div><!--/col-md-4 -->
     </div><!--/row -->
@@ -46,7 +44,17 @@
     <div class="row mtb">
       <div class="col-lg-10 col-lg-offset-1">
         <img src="assets/img/panoramic.jpg" class="img-responsive aligncenter" alt="">
-        <p class="mtb centered">There are many variations of passages of <b>Lorem Ipsum</b> available, but the majority have <b>suffered alteration</b> in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <p class="mtb centered"><h3><strong>Hours of Operation: | 410 Massachusetts Avenue, Boston, MA 02115 | (617) 867-9200 </strong></h3></p>
       </div>
     </div><!--/row -->
   </div><!--/container -->
+
+<script>
+  // Hair Clippers
+$('#hairclipper').jrumble();
+$('#hairclipper').hover(function(){
+  $(this).trigger('startRumble');
+}, function(){
+  $(this).trigger('stopRumble');
+});
+</script>
