@@ -4,3 +4,12 @@ h1 {
   text-align: center;
   color: $barber-red;
 }
+
+#gallery img {
+  height: 250px;
+  width: 300px;
+}
+
+#gallery a:hover img {
+  border: 1px solid $barber-red;
+}
