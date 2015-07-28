@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.jrumble.1.3
-//= require turbolinks
+//= require clipper
 //= require bootstrap-sprockets
 //= require_tree .

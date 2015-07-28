@@ -9,18 +9,40 @@
 
         <div class="row">
           <ul>
-            <li class="thumbnail col-sm-3"><%= image_tag("milqcutnedge.jpg") %></li>
-            <li class="thumbnail col-sm-3"><%= image_tag("lamontcutnedge.jpg") %></li>
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgechair1.jpg") %></li>
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgeshop1.jpg") %></li>
-
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgechair2.jpg") %></li>
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgeshop3.jpg") %></li>
-
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgeshop4.jpg") %></li>
-
-            <li class="thumbnail col-sm-3"><%= image_tag("cutnedgebarber.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("milqcutnedge.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("lamontcutnedge.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgechair1.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgeshop1.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgechair2.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgeshop3.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgeshop4.jpg") %></li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><%= image_tag("cutnedgebarber.jpg") %></li>
           </ul>
         </div>
     </div><!-- /.container -->
 </div>
+
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });
+        })
+</script>
