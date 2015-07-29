@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.jrumble.1.3
+//= require jquery.airport-1.1.source
 //= require clipper
 //= require bootstrap-sprockets
 

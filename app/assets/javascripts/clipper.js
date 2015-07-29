@@ -12,6 +12,10 @@ function init () {
   };
 
   clipperStart();
+
+  $('#about-title').airport(['about', 'cut', 'n', 'edge']);
+  $('#gallery-title').airport(['photo', 'gallery']);
+  $('#contact-title').airport(['contact', 'us']);
 }
 
 window.onload = init;
