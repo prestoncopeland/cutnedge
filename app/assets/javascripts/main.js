@@ -20,7 +20,9 @@ function init () {
 
 window.onload = init;
 
+// Initializing WOW.JS
 
+ new WOW().init();
 
 
 
