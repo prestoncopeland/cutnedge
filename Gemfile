@@ -13,6 +13,8 @@ gem 'sqlite3'
 gem 'uglifier', '>= 1.3.0'
 gem 'high_voltage', '~> 2.3.0'
 gem 'thin'
+gem 'pg'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
