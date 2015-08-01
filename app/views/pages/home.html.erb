@@ -1,8 +1,8 @@
   <div id="h">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <%= image_tag('cutnedgebiglogo.png', :size=>'600x250') %>
+          <%= image_tag('cutnedgebiglogo.png', :size=>'600x250', :class=>"img-responsive") %>
         </div>
         </div>
     </div><!-- /.container -->
@@ -14,7 +14,8 @@
         <h2 class="theme mb">Where Looking Good Is Understood</h2>
         <p class="mt">Cut N Edge has been providing Boston with outstanding haircuts for almost 20 years. Come for the atmosphere. Come for the music. Come get it cut &mdash; and edged.</p>
         <p>Monday 10-6 | Tuesday-Saturday 9-7 | Sunday closed</p>
-        <p>(617) 867-9200</p>
+        <p>410 Massachusetts Avenue, Boston, MA 02115</p>
+        <p>(617) 867-9200 &nbsp; <%= link_to image_tag("facebookicon.png", :size=>"20x20"), "https://www.facebook.com/pages/Cut-N-Edge-Barbershop/137591542960657", :target=>"_blank" %> </p>
       </div>
     </div><!--/row -->
     <hr>
