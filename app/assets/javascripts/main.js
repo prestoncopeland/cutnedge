@@ -16,6 +16,7 @@ function init () {
   $('#about-title').airport(['about', 'cut', 'n', 'edge']);
   $('#gallery-title').airport(['photo', 'gallery']);
   $('#contact-title').airport(['contact', 'us']);
+  $('#cuts-title').airport(['choose', 'your', 'cut']);
 }
 
 window.onload = init;
