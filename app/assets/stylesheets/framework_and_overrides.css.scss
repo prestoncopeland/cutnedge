@@ -1,3 +1,11 @@
 // import the CSS framework
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$barber-red: #B31026;
+
+.frame {
+  border: 20px solid $barber-red;
+  border-top: 0;
+  border-bottom: 0;
+}
