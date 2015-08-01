@@ -1,29 +1,55 @@
 $barber-red: #B31026;
 
+#photo-container {
+  position:relative;
+  width:770px;
+  height:396px;
+  margin:20px auto 0 auto;
+  border:1px solid #aaa;
+}
+
+#photo-container ul {
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+          list-style-type:none;
+}
+
+/* Remove the images and text from sight */
+#photo-container a.gallery span {
+    position:absolute;
+    width:1px;
+    height:1px;
+    top:5px;
+    left:5px;
+    overflow:hidden;
+    background:#fff;
+    }
+
+/* Adding the thumbnail images */
+#photo-container a.gallery, #photo-container a.gallery:visited {
+    display:block;
+    color:#000;
+    text-decoration:none;
+    border:1px solid #000;
+    margin:1px 2px 1px 2px;
+    text-align:left;
+    cursor:default;
+}
+
+#photo-container a {
+    background-image: url(image_path('thumbcutnedgebarber.jpg'));
+    height:150px;
+    width:150px;
+    border: 1px solid $barber-red;
+
+}
+
 h1 {
   text-align: center;
   color: $barber-red;
 }
 
-#gallery img {
-  height: 250px;
-  width: 300px;
-}
 
-#gallery a:hover img {
-  border: 1px solid $barber-red;
-}
 
-ul {
-          padding:0 0 0 0;
-          margin:0 0 0 0;
-}
 
-ul li {
-          list-style:none;
-          margin-bottom:25px;
-}
 
-ul li img {
-          cursor: pointer;
-}
